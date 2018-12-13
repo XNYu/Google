@@ -41,6 +41,6 @@ public class A重复三次 {
 
     public static void main(String[] args) {
         A重复三次 a = new A重复三次();
-        System.out.println(a.func("heeelllooo"));
+        System.out.println(a.func("heeellloooaa"));
     }
 }

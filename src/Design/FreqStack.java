@@ -2,7 +2,6 @@ package Design;
 
 import java.util.HashMap;
 import java.util.PriorityQueue;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class FreqStack {
     private volatile int value;
@@ -68,8 +67,8 @@ public class FreqStack {
     public static void main(String[] args) {
         FreqStack f = new FreqStack();
         f.push(new int[]{2, 3});
-        f.push(new int[]{3,4});
-        f.push(new int[]{2,4});
+        f.push(new int[]{3, 4});
+        f.push(new int[]{2, 4});
         f.push(new int[]{3, 3});
         int[] ans = f.pop();
         System.out.println(ans[0] + "," + ans[1]);

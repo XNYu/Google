@@ -1,6 +1,6 @@
 public class 数字生成字符串 {
-    public static String go(String orin) {
 
+    public static String go(String orin) {
         int num = 0;
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < orin.length(); i++) {
@@ -20,7 +20,6 @@ public class 数字生成字符串 {
                         count++;
                 }
                 String newOrin = orin.substring(i+1, k);
-//                String newOrin = orin.substring(i + 1, orin.length() - 1);
                 String toAppend = go(newOrin);
                 i = k;
                 for (int j = 0; j < num; j++) {
@@ -37,6 +36,6 @@ public class 数字生成字符串 {
     }
 
     public static void main(String[] args) {
-        System.out.println(go("2a3[b]"));
+        System.out.println(go("2[a3[bc]]"));
     }
 }
